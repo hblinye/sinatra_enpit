@@ -8,3 +8,6 @@ get '/new' do
   "this is a new page"
 end
 
+post '/sayhello' do
+  "Hello #{params[:username]}"
+end
