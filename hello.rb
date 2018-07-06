@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World! aiit"
+  erb :index
 end
 
 get '/new' do
@@ -11,3 +11,8 @@ end
 post '/sayhello' do
   "Hello #{params[:username]}"
 end
+
+get '/toSayhello' do
+  erb :sayhello
+end
+
